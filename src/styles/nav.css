@@ -1,0 +1,13 @@
+nav > ul ul {
+  display: none;
+  padding-left: 10px;
+}
+nav a.active {
+  @apply text-myColor-500;
+}
+nav a.active {
+  @apply text-myColor-500;
+  & + ul {
+    display: block;
+  }
+}
