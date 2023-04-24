@@ -3,10 +3,10 @@ nav > ul ul {
   padding-left: 10px;
 }
 nav a.active {
-  @apply text-myColor-500;
+  @apply font-bold text-primary-500;
 }
 nav a.active {
-  @apply text-myColor-500;
+  @apply text-primary-500;
   & + ul {
     display: block;
   }

@@ -18,7 +18,7 @@ const queryClient = new QueryClient({
 
 const App = () => {
   return (
-    <div>
+    <div className="min-h-screen bg-gradient-to-br from-primary-900 to-primary-950 text-primary-50">
       <BrowserRouter>
         <QueryClientProvider client={queryClient}>
           <Header />

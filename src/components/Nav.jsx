@@ -20,7 +20,7 @@ const Nav = () => {
     <nav>
       <ul>
         {tutorials.map((link) => (
-          <li key={link.to}>
+          <li key={link.to} className="text-md mb-2">
             <NavLink
               to={link.to}
               className={({ isActive }) => (isActive ? "active" : "")}
@@ -28,9 +28,9 @@ const Nav = () => {
               {link.label}
             </NavLink>
             {link.children && (
-              <ul>
+              <ul className="mb-4 mt-2">
                 {link.children.map((child) => (
-                  <li key={child.to}>
+                  <li key={child.to} className="text-md mb-2">
                     <NavLink to={child.to}>{child.label}</NavLink>
                   </li>
                 ))}
