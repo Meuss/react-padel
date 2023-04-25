@@ -5,6 +5,7 @@ import Welcome from "./components/Welcome";
 import Shots from "./components/Shots";
 import Header from "./components/Header";
 import Nav from "./components/Nav";
+import bgImage from "./images/padel-bg.jpg";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -17,17 +18,22 @@ const queryClient = new QueryClient({
 
 const App = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-primary-900 to-primary-950 text-primary-50">
+    <div
+      style={{ backgroundImage: "url(" + bgImage + ")" }}
+      className="relative flex min-h-screen flex-col bg-cover bg-center text-primary-50"
+    >
       <BrowserRouter>
         <QueryClientProvider client={queryClient}>
           <Header />
-          <div className="container py-8">
-            <div className="flex justify-between gap-20">
-              <Nav />
-              <Routes>
-                <Route path="/" element={<Welcome />} />
-                <Route path="/shots" element={<Shots />} />
-              </Routes>
+          <div className="flex-1 bg-black bg-opacity-95">
+            <div className="container py-8">
+              <div className="flex justify-between gap-20">
+                <Nav />
+                <Routes>
+                  <Route path="/" element={<Welcome />} />
+                  <Route path="/shots" element={<Shots />} />
+                </Routes>
+              </div>
             </div>
           </div>
         </QueryClientProvider>
