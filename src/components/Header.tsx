@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "../images/logo.svg";
+import { ReactComponent as Logo } from "../images/logo.svg";
 
 const Header = () => {
   return (
@@ -14,8 +14,8 @@ const Header = () => {
       <div className="bg-zinc-900 py-4 text-white">
         <div className="container flex items-center justify-between">
           <Link to="/" className="flex items-center gap-4">
-            <img src={logo} alt="logo" width="50px" className="" />
-            <i>React Padel</i>
+            <Logo />
+            <i>React&nbsp;Padel</i>
           </Link>
           <div className=" font-bold">Langswitcher</div>
         </div>

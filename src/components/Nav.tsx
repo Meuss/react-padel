@@ -1,16 +1,22 @@
 import "../styles/nav.css";
-import { Link, Route, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
-const tutorials = [
+type TutorialLink = {
+  to: string;
+  label: string;
+  children?: TutorialLink[];
+};
+
+const tutorials: TutorialLink[] = [
   { to: "/", label: "Welcome" },
   {
     to: "/shots",
     label: "Shots",
-    children: [
-      { to: "/shots/bandeja", label: "Bandeja" },
-      { to: "/shots/volley", label: "Volley" },
-      { to: "/shots/lob", label: "Lob" },
-    ],
+    // children: [
+    //   { to: "/shots/bandeja", label: "Bandeja" },
+    //   { to: "/shots/volley", label: "Volley" },
+    //   { to: "/shots/lob", label: "Lob" },
+    // ],
   },
   { to: "/tips", label: "Tips" },
   { to: "/rackets", label: "Rackets" },

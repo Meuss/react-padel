@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import shotsImage from "../images/shots.jpg";
 import tipsImage from "../images/tips.jpg";
 import racketsImage from "../images/rackets.jpg";
-
 import { ReactComponent as ReactLogo } from "../images/react.svg";
 
 const links = [
@@ -14,6 +13,9 @@ const links = [
 const Welcome = () => {
   return (
     <div className="flex-1">
+      <h2 className="mb-10 flex items-center gap-2 text-2xl font-bold">
+        Welcome to <ReactLogo /> Padel
+      </h2>
       <div className="grid grid-cols-3 gap-20">
         {links.map((link) => (
           <Link
