@@ -1,0 +1,12 @@
+{
+  "serve": { "name": "Serve", "videoID": "zSTsLQQDhMw" },
+  "returning": { "name": "Returning serve", "videoID": "qOEUKLLQ9pY" },
+  "volley": { "name": "Volley", "videoID": "wCAqvaqrnZ4" },
+  "lob": { "name": "Lob", "videoID": "3dzag7521pU" },
+  "smash": { "name": "Smash", "videoID": "5l0vMSN2Mek" },
+  "chiquita": { "name": "Chiquita", "videoID": "zoqNcDZg568" },
+  "bandeja": { "name": "Bandeja", "videoID": "yHAJ5XjFUNg" },
+  "bajada": { "name": "Bajada", "videoID": "ZqGKg7g70r8" },
+  "bibora": { "name": "Vibora", "videoID": "PihyQF3EnHk" },
+  "drop": { "name": "Drop Shot", "videoID": "nItfOr9O0A4" }
+}
