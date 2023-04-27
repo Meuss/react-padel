@@ -31,7 +31,9 @@ const App = () => {
             <div className="flex-1 bg-black bg-opacity-95">
               <div className="container py-8">
                 <div className="flex justify-between gap-20">
-                  <Nav />
+                  <div className="hidden md:block">
+                    <Nav />
+                  </div>
                   <Routes>
                     <Route path="/" element={<Welcome />} />
                     <Route path="/shots" element={<Shots />} />

@@ -16,7 +16,7 @@ const Welcome = () => {
       <h2 className="mb-10 flex items-center gap-2 text-2xl font-bold">
         Welcome to <ReactLogo /> Padel
       </h2>
-      <div className="grid grid-cols-3 gap-20">
+      <div className="grid grid-cols-1 gap-20 lg:grid-cols-2 xl:grid-cols-3">
         {links.map((link) => (
           <Link
             key={link.to}
