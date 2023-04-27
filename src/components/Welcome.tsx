@@ -21,7 +21,7 @@ const Welcome = () => {
           <Link
             key={link.to}
             to={link.to}
-            className="flex flex-col items-center gap-2 rounded-xl bg-cover bg-center py-10"
+            className="flex aspect-video flex-col items-center gap-2 rounded-xl bg-cover bg-center py-10"
             style={{
               backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.027),rgba(0, 0, 0, 0.3)), url(${link.image})`,
             }}
