@@ -22,6 +22,8 @@
 
 :arrow_right: React Query, Suspense, Memo, Error boundaries
 
+:arrow_right: Modals + Portals
+
 :arrow_right: Test some form ui kits
 
 :arrow_right: Form actions & validation
