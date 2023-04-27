@@ -5,4 +5,7 @@ import svgr from "vite-plugin-svgr";
 export default defineConfig({
   plugins: [svgr(), react()],
   root: "src",
+  build: {
+    outDir: "../dist",
+  },
 });
