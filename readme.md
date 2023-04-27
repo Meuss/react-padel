@@ -1,15 +1,15 @@
 # Testing out React stuff on a Padel focused app
 
-- [x]Dev tools: Vite, Tailwind, nesting, Eslint etc...
-- [ ]UI Kit?
-- [x]Mobile menu with Gsap
-- [ ]Galery with Swiper
-- [ ]Multilingual
-- [ ]Routing
-- [ ]Page transitions
-- [x]Typescript
-- [x]Redux Toolkit
-- [ ]React Query
-- [ ]Testing
-- [ ]Form actions & validation
-- ...
+:white_check_mark: Dev tools: Vite, Tailwind, nesting, Eslint etc...
+:negative_squared_cross_mark: UI Kit?
+:white_check_mark: Mobile menu
+:negative_squared_cross_mark: Galery with Swiper
+:negative_squared_cross_mark: Multilingual
+:negative_squared_cross_mark: Routing
+:negative_squared_cross_mark: Page transitions
+:white_check_mark: Typescript
+:white_check_mark: Redux Toolkit
+:negative_squared_cross_mark: React Query
+:negative_squared_cross_mark: Testing
+:negative_squared_cross_mark: Form actions & validation
+...
