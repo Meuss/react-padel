@@ -1,10 +1,11 @@
 import "../styles/burger.css";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleMenu } from "../store/mobileMenuSlice";
+import { RootState } from "../types/store";
 
 const Burger = () => {
   const dispatch = useDispatch();
-  const isActive = useSelector((state) => state.mobileMenu.open);
+  const isActive = useSelector((state: RootState) => state.mobileMenu.open);
 
   const handleToggle = () => {
     dispatch(toggleMenu());

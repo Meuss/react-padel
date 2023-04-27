@@ -1,6 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { MobileMenuState } from "../types/store";
 
-const initialState = {
+const initialState: MobileMenuState = {
   open: false,
 };
 
