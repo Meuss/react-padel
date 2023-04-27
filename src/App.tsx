@@ -42,6 +42,7 @@ const App = () => {
           </QueryClientProvider>
         </Provider>
       </BrowserRouter>
+      <div className="mq-helper pointer-events-none fixed bottom-2 left-2 bg-primary-500 p-1 text-xs font-normal text-black" />
     </div>
   );
 };

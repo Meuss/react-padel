@@ -10,3 +10,44 @@
     @apply bg-primary-700 ring-2 ring-primary-600;
   }
 }
+
+@layer utilities {
+  .youtubeContainer iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .mq-helper {
+    @apply hidden;
+    @screen sm {
+      @apply block;
+    }
+  }
+  @screen sm {
+    .mq-helper::after {
+      content: "sm";
+    }
+  }
+  @screen md {
+    .mq-helper::after {
+      content: "md";
+    }
+  }
+  @screen lg {
+    .mq-helper::after {
+      content: "lg";
+    }
+  }
+  @screen xl {
+    .mq-helper::after {
+      content: "xl";
+    }
+  }
+  @screen 2xl {
+    .mq-helper::after {
+      content: "2xl";
+    }
+  }
+}
