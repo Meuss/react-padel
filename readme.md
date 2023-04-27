@@ -2,23 +2,23 @@
 
 :white_check_mark: Dev tools: Vite, Tailwind, nesting, Eslint etc...
 
-:negative_squared_cross_mark: UI Kit?
-
-:white_check_mark: Mobile menu
-
-:negative_squared_cross_mark: Galery with Swiper
-
-:negative_squared_cross_mark: Multilingual
-
-:negative_squared_cross_mark: Routing
-
-:negative_squared_cross_mark: Page transitions
-
 :white_check_mark: Typescript
 
 :white_check_mark: Redux Toolkit
 
-:negative_squared_cross_mark: React Query
+:white_check_mark: Mobile menu
+
+:white_check_mark: Multilingual
+
+:white_check_mark: Routing
+
+:negative_squared_cross_mark: UI Kit?
+
+:negative_squared_cross_mark: Galery with Swiper
+
+:negative_squared_cross_mark: Page transitions
+
+:negative_squared_cross_mark: React Query, Suspense, Memo, Error boundaries
 
 :negative_squared_cross_mark: Testing
 
