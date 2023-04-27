@@ -1,0 +1,35 @@
+.burger {
+  transition: transform 400ms;
+  & .top {
+    stroke-dasharray: 40 160;
+  }
+  & .middle {
+    stroke-dasharray: 40 142;
+    transform-origin: 50%;
+    transition: transform 400ms;
+  }
+  & .bottom {
+    stroke-dasharray: 40 85;
+    transform-origin: 50%;
+    transition: transform 400ms, stroke-dashoffset 400ms;
+  }
+  &.active {
+    transform: rotate(45deg);
+    & .top {
+      stroke-dashoffset: -64px;
+    }
+    & .middle {
+      transform: rotate(90deg);
+    }
+    & .bottom {
+      stroke-dashoffset: -64px;
+    }
+  }
+}
+.line {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: var(--color-primary);
+  stroke-width: 5.5;
+  stroke-linecap: round;
+}

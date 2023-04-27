@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { ReactComponent as Logo } from "../images/logo.svg";
+import Burger from "./Burger";
 
 const Header = () => {
   return (
@@ -17,7 +18,8 @@ const Header = () => {
             <Logo />
             <i>React&nbsp;Padel</i>
           </Link>
-          <div className=" font-bold">Langswitcher</div>
+          <Burger />
+          <div className="hidden font-bold md:block">Langswitcher</div>
         </div>
       </div>
     </header>
