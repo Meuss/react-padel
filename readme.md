@@ -12,15 +12,17 @@
 
 :white_check_mark: Routing
 
-:arrow_right: UI Kit?
+:white_check_mark: Testing GSAP integration
 
 :arrow_right: Galery with Swiper
+
+:arrow_right: Testing
 
 :arrow_right: Page transitions
 
 :arrow_right: React Query, Suspense, Memo, Error boundaries
 
-:arrow_right: Testing
+:arrow_right: Test some form ui kits
 
 :arrow_right: Form actions & validation
 
