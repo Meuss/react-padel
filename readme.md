@@ -12,16 +12,16 @@
 
 :white_check_mark: Routing
 
-:negative_squared_cross_mark: UI Kit?
+:arrow_right: UI Kit?
 
-:negative_squared_cross_mark: Galery with Swiper
+:arrow_right: Galery with Swiper
 
-:negative_squared_cross_mark: Page transitions
+:arrow_right: Page transitions
 
-:negative_squared_cross_mark: React Query, Suspense, Memo, Error boundaries
+:arrow_right: React Query, Suspense, Memo, Error boundaries
 
-:negative_squared_cross_mark: Testing
+:arrow_right: Testing
 
-:negative_squared_cross_mark: Form actions & validation
+:arrow_right: Form actions & validation
 
 ...
