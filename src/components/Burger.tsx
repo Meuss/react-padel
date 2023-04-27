@@ -1,14 +1,18 @@
 import "../styles/burger.css";
 import { useDispatch, useSelector } from "react-redux";
-import { toggleMenu } from "../store/mobileMenuSlice";
+import { openMenu, closeMenu } from "../store/mobileMenuSlice";
 import { RootState } from "../types/store";
 
 const Burger = () => {
   const dispatch = useDispatch();
-  const isActive = useSelector((state: RootState) => state.mobileMenu.open);
+  const isOpen = useSelector((state: RootState) => state.mobileMenu.open);
 
   const handleToggle = () => {
-    dispatch(toggleMenu());
+    if (isOpen) {
+      dispatch(closeMenu());
+    } else {
+      dispatch(openMenu());
+    }
   };
   return (
     <button
@@ -17,7 +21,7 @@ const Burger = () => {
       className="md:hidden"
     >
       <svg
-        className={`burger ${isActive ? "active" : ""}`}
+        className={`burger ${isOpen ? "active" : ""}`}
         viewBox="0 0 100 100"
         width="40"
       >

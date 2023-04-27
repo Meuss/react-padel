@@ -7,26 +7,30 @@ type TutorialLink = {
   children?: TutorialLink[];
 };
 
+interface NavProps {
+  mobile?: boolean;
+}
+
 const tutorials: TutorialLink[] = [
   { to: "/", label: "Welcome" },
   {
     to: "/shots",
     label: "Shots",
-    // children: [
-    //   { to: "/shots/bandeja", label: "Bandeja" },
-    //   { to: "/shots/volley", label: "Volley" },
-    //   { to: "/shots/lob", label: "Lob" },
-    // ],
   },
   { to: "/tips", label: "Tips" },
   { to: "/rackets", label: "Rackets" },
 ];
-const Nav = () => {
+const Nav: React.FC<NavProps> = ({ mobile = false }) => {
   return (
-    <nav>
+    <nav className={`${mobile ? "" : ""}`}>
       <ul>
         {tutorials.map((link) => (
-          <li key={link.to} className="text-md mb-2">
+          <li
+            key={link.to}
+            className={`font-bold ${
+              mobile ? "mb-6 text-center text-2xl" : "text-md mb-2"
+            }`}
+          >
             <NavLink
               to={link.to}
               className={({ isActive }) => (isActive ? "active" : "")}

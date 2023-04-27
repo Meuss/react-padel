@@ -3,7 +3,7 @@ nav > ul ul {
   padding-left: 10px;
 }
 nav a.active {
-  @apply font-bold text-primary-500;
+  @apply text-primary-500;
 }
 nav a.active {
   @apply text-primary-500;
