@@ -30,7 +30,7 @@ const App = () => {
         <Provider store={store}>
           {/* <QueryClientProvider client={queryClient}> */}
           <Header />
-          <div className="flex-1 bg-black bg-opacity-95">
+          <div className="flex-1 bg-black bg-opacity-60">
             <MobileMenu />
             <div className="container py-8">
               <div className="flex justify-between gap-20">
