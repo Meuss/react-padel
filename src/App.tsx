@@ -25,7 +25,7 @@ const App = () => {
   return (
     <div
       style={{ backgroundImage: "url(" + bgImage + ")" }}
-      className="relative flex min-h-screen flex-col bg-cover bg-fixed bg-center text-primary-50"
+      className="relative flex flex-col overflow-hidden bg-cover bg-fixed bg-center text-primary-50"
     >
       <BrowserRouter>
         <Provider store={store}>
