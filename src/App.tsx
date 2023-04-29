@@ -6,6 +6,7 @@ import "./i18n";
 import store from "./store";
 import Welcome from "./components/Welcome";
 import Shots from "./components/Shots";
+import Tips from "./components/Tips";
 import Header from "./components/Header";
 import Nav from "./components/Nav";
 import MobileMenu from "./components/MobileMenu";
@@ -24,7 +25,7 @@ const App = () => {
   return (
     <div
       style={{ backgroundImage: "url(" + bgImage + ")" }}
-      className="relative flex min-h-screen flex-col bg-cover bg-center text-primary-50"
+      className="relative flex min-h-screen flex-col bg-cover bg-fixed bg-center text-primary-50"
     >
       <BrowserRouter>
         <Provider store={store}>
@@ -40,6 +41,8 @@ const App = () => {
                 <Routes>
                   <Route path="/" element={<Welcome />} />
                   <Route path="/shots" element={<Shots />} />
+                  <Route path="/tips" element={<Tips />} />
+                  <Route path="/rackets" element={<Welcome />} />
                 </Routes>
               </div>
             </div>
