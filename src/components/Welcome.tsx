@@ -5,9 +5,9 @@ import racketsImage from "../images/rackets.jpg";
 import { ReactComponent as ReactLogo } from "../images/react.svg";
 
 const links = [
-  { to: "shots", label: "Shots", image: shotsImage },
-  { to: "tips", label: "Tips", image: tipsImage },
-  { to: "rackets", label: "Rackets", image: racketsImage },
+  { to: "/shots", label: "Shots", image: shotsImage },
+  { to: "/tips", label: "Tips", image: tipsImage },
+  { to: "/rackets", label: "Rackets", image: racketsImage },
 ];
 
 const Welcome = () => {

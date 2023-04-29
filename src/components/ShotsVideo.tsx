@@ -1,11 +1,10 @@
 import YouTube from "react-youtube";
+import { useSelector } from "react-redux";
+import { Shot } from "../types/shots";
 import { OptionType } from "../types/video";
 
-interface VideoProps {
-  videoID: string;
-  autoplay: 0 | 1;
-}
-const Video = (props: VideoProps) => {
+const ShotsVideo = () => {
+  const currentShot: Shot = useSelector((state: { shot: Shot }) => state.shot);
   const onPlayerReady = (event: {
     target: { pauseVideo: () => void };
   }): void => {
@@ -13,14 +12,18 @@ const Video = (props: VideoProps) => {
   };
   const opts: OptionType = {
     playerVars: {
-      autoplay: props.autoplay,
+      autoplay: 1,
     },
   };
   return (
     <div className="youtubeContainer relative mb-12 h-0 w-full overflow-hidden pb-[56.25%]">
-      <YouTube videoId={props.videoID} opts={opts} onReady={onPlayerReady} />
+      <YouTube
+        videoId={currentShot.videoID}
+        opts={opts}
+        onReady={onPlayerReady}
+      />
     </div>
   );
 };
 
-export default Video;
+export default ShotsVideo;

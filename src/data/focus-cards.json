@@ -1,0 +1,34 @@
+{
+  "consistency": {
+    "title": "Consistency",
+    "content": [
+      "Warmup: Look at contact point",
+      "Play with a plan",
+      "Split step when oppenent hits the ball",
+      "Keep 2 feet on the ground before, during and after hit"
+    ]
+  },
+  "bandeja": {
+    "title": "Bandeja",
+    "content": ["Racket high", "Turn sideways", "Contact point: eye level"]
+  },
+  "vibora": {
+    "title": "Vibora",
+    "content": [
+      "Around 60-70% max speed",
+      "Racket behind head",
+      "3 o'clock",
+      "Contact point: eye level",
+      "Brush around ball"
+    ]
+  },
+  "kicksmash": {
+    "title": "Kick Smash",
+    "content": [
+      "Change grip",
+      "Very loose wrist",
+      "Contact point: between head and right shoulder",
+      "Remember the ball throw"
+    ]
+  }
+}

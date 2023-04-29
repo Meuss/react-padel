@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import shotsData from "../data/shots.json";
 import { Shot } from "../types/shots";
 import { set } from "../store/shotSlice";
-import Video from "./Video";
+import ShotsVideo from "./ShotsVideo";
 
 const shots: Shot[] = Object.values(shotsData).map((value: Shot) => ({
   name: value.name,
@@ -19,7 +19,7 @@ const Shots: React.FC = () => {
         Shots &gt; {currentShot.name}
       </h2>
       <div className="mx-auto mb-10 max-w-5xl text-xl font-bold">
-        <Video />
+        <ShotsVideo />
       </div>
       <div className="grid gap-y-4 md:grid-cols-3 md:gap-x-4 xl:grid-cols-4">
         {shots.map((shot, i) => (

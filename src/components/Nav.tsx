@@ -18,6 +18,7 @@ const tutorials: TutorialLink[] = [
     label: "Shots",
   },
   { to: "/tips", label: "Tips" },
+  { to: "/focus", label: "Focus" },
   { to: "/rackets", label: "Rackets" },
 ];
 const Nav: React.FC<NavProps> = ({ mobile = false }) => {

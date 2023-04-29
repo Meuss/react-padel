@@ -1,53 +1,57 @@
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Provider } from "react-redux";
 import "./i18n";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+import CssBaseline from "@mui/material/CssBaseline";
 import store from "./store";
 import Welcome from "./components/Welcome";
 import Shots from "./components/Shots";
 import Tips from "./components/Tips";
+import Focus from "./components/Focus";
 import Header from "./components/Header";
 import Nav from "./components/Nav";
 import MobileMenu from "./components/MobileMenu";
 import bgImage from "./images/padel-bg.jpg";
 
-// const queryClient = new QueryClient({
-//   defaultOptions: {
-//     queries: {
-//       staleTime: Infinity,
-//       cacheTime: Infinity,
-//     },
-//   },
-// });
+const darkTheme = createTheme({
+  typography: {
+    fontFamily: ["Avenir", "Roboto"].join(","),
+  },
+  palette: {
+    mode: "dark",
+  },
+});
 
 const App = () => {
   return (
     <div
       style={{ backgroundImage: "url(" + bgImage + ")" }}
-      className="relative flex flex-col overflow-hidden bg-cover bg-fixed bg-center text-primary-50"
+      className="relative flex min-h-screen flex-col overflow-hidden bg-cover bg-fixed bg-center text-primary-50"
     >
       <BrowserRouter>
         <Provider store={store}>
-          {/* <QueryClientProvider client={queryClient}> */}
-          <Header />
-          <div className="flex-1 bg-black bg-opacity-60">
-            <MobileMenu />
-            <div className="container py-8">
-              <div className="flex justify-between gap-20">
-                <div className="hidden md:block">
-                  <Nav />
+          <ThemeProvider theme={darkTheme}>
+            <CssBaseline />
+            <Header />
+            <div className="flex-1 bg-black bg-opacity-60">
+              <MobileMenu />
+              <div className="container py-8">
+                <div className="flex justify-between gap-20">
+                  <div className="hidden md:block">
+                    <Nav />
+                  </div>
+                  <Routes>
+                    <Route path="/" element={<Welcome />} />
+                    <Route path="/shots" element={<Shots />} />
+                    <Route path="/tips" element={<Tips />} />
+                    <Route path="/focus" element={<Focus />} />
+                    <Route path="/rackets" element={<Welcome />} />
+                  </Routes>
                 </div>
-                <Routes>
-                  <Route path="/" element={<Welcome />} />
-                  <Route path="/shots" element={<Shots />} />
-                  <Route path="/tips" element={<Tips />} />
-                  <Route path="/rackets" element={<Welcome />} />
-                </Routes>
               </div>
             </div>
-          </div>
-          {/* </QueryClientProvider> */}
+          </ThemeProvider>
         </Provider>
       </BrowserRouter>
       {process.env.NODE_ENV === "development" && (
