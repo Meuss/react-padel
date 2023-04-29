@@ -13,7 +13,6 @@ import Header from "./components/Header";
 import Nav from "./components/Nav";
 import MobileMenu from "./components/MobileMenu";
 import bgImage from "./images/padel-bg.jpg";
-
 const darkTheme = createTheme({
   typography: {
     fontFamily: ["Avenir", "Roboto"].join(","),
